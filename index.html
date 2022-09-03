@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width =device-width, initial-scale = 1.0" />
+    <meta name="description" content="Quoc Phong Dang Portfolio" />
+    <title>Tap Dang Portfolio</title>
+
+    <style>
+      img {
+        width: 300px;
+      }
+
+      .first-look {
+        position: fixed;
+        right: 8cm;
+        top: 4cm;
+      }
+
+      .name {
+        font-weight: bold;
+        object-fit: none;
+        text-align: center;
+      }
+    </style>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+
+
+    <nav>
+      <h1>Tap Dang</h1>
+      <ul class="Navigation">
+        <li><a href="#about" class="vav-li">About</a></li>
+        <li><a href="#skill" class="nav-li">Skill</a></li>
+        <li><a href="#contact" class="nav-li">Contact</a></li>
+      </ul>
+      <button class="burger" id="burger">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+      </button>
+    </nav>
+
+    <section class="tap" id="about">
+      <img
+        src="images/p1.jpg"
+        alt="Tap Photo"
+        loading="lazy"
+        class="tap image"
+      />
+
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">About me</h2>
+        <p class="bio-text">
+          I'm Quoc Phong Dang but people can call me Tap or Tap Dang as my
+          prefer name. I'm pursuing B.S in Computer Science at Dickinson College
+          in class of 2024. I'm deeply interested in Cybersecurity especially in
+          Cryptography. Also I have some curiosity in Machine Learning too.
+        </p>
+      </div>
+    </section>
+
+    <section class="skills" id="skill">
+      <h2 class = "skill-header">My Top Skills</h2>
+
+      <div class="skills-wrapper">
+        <div class="firt-set animate__animated animate__pulse">
+          <img src="Icons/icons8-html-5.svg" alt="html icon" loading = "lazy" class="icon icon-card">
+          <img src="Icons/icons8-java.svg" alt="java icon" loading = "lazy" class="icon icon-card">
+          <img src="Icons/icons8-javascript.svg" alt="javascript icon" loading = "lazy" class="icon icon-card">
+          <img src="Icons/icons8-python.svg" alt="python icon" loading = "lazy" class="icon icon-card">
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact me</h2>
+      <div class="contacts">
+        <a href="https://github.com/phong260702" target="_blank">
+          <img src="Icons/icons8-github.svg" alt="github icon" loading="lazy" class="concon">          
+        </a>
+        <a href="https://www.linkedin.com/in/quoc-phong-dang-a59b7221a/" target="_blank">
+          <img src="Icons/icons8-linkedin-circled.svg" alt="Linkedin" loading="lazy" class="concon">
+        </a>
+        <a href="mailto:phongdangquoc123@gmail.com" target="_blank">
+          <img src="Icons/icons8-gmail-logo.svg" alt="Gmail" loading="lazy" class="concon">
+        </a>
+      </div>
+    </section>
+  
+
+
+
+    <script src="index.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
