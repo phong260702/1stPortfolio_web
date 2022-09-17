@@ -69,7 +69,7 @@ nav ul li {
 }
 
 
-.burger-menu {
+.burger {
     color: var(--primary-color);
     font-size: 2rem;
     border: 0;
@@ -85,6 +85,8 @@ nav ul li {
     gap: 16.5rem;
     max-width: 68.75rem;
     margin: auto;
+    margin-top: 2.5rem;
+    margin-left: 0 0 02.5rem;
 }
 
 
