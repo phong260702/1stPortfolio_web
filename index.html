@@ -7,70 +7,84 @@
     <meta name="description" content="Quoc Phong Dang Portfolio" />
     <title>Tap Dang Portfolio</title>
 
-    <style>
-      img {
-        width: 300px;
-      }
-
-      .first-look {
-        position: fixed;
-        right: 8cm;
-        top: 4cm;
-      }
-
-      .name {
-        font-weight: bold;
-        object-fit: none;
-        text-align: center;
-      }
-    </style>
-
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
-    <link rel="stylesheet" href="style.css" />
-
+    <script src="https://kit.fontawesome.com/46b7ceee20.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="flex.css" />
     <link rel="stylesheet" href="responsive.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
   </head>
 
+  <body class="backg">
 
-    <nav>
-      <h1>Tap Dang</h1>
-      <ul class="Navigation">
-        <li><a href="#about" class="nav-li">About</a></li>
-        <li><a href="#skill" class="nav-li">Skill</a></li>
-        <li><a href="#contact" class="nav-li">Contact</a></li>
-        <li><a href="Files/Quoc Phong Dang-CV.docx" class="nav-li">Resume</a></li>
-      </ul>
-      <button class="burger" id="burger">
-        <ion-icon class="bars" name="menu-outline"></ion-icon>
-      </button>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Tap Dang</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="#about">About</a>
+            <a class="nav-link" href="#skills">Skill</a>
+            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="Files/Quoc Phong Dang.pdf">Resume</a>
+          </div>
+        </div>
+      </div>
     </nav>
+  
+
+    <section id="home" class="img-hover">
+      <div class="home__message animated zoomIn">
+        <h1>Hi, I'm Quoc Phong (Tap) Dang</h1>
+        <h3 class>Backed-end Developer Specialize in Distributed System</h3>
+        <br><br><br><br><br>
+        <div class="cv">
+          <form method="get" action="Files/Quoc Phong Dang.pdf">
+            <button class="ghst-btn" style="float: initial;">
+              <span><i class="fa fa-download"></i></span>
+              Resume
+            </button>
+          </form>
+        </div>
+      </div>  
+    </section>
+
 
     <section class="tap" id="about">
-      <img
+      <div class="profile__img">
+        <img
         src="images/p1.jpg"
         alt="Tap Photo"
         loading="lazy"
         class="tap image"
       />
+      </div>
+
 
       <div class="bio animate__animated animate__shakeX">
-        <h2 class="bio-title">About me</h2>
-        <p class="bio-text">
-          I'm Quoc Phong Dang, but people can call me Tap or Tap Dang.
+        <h2 class="1bio-title">About me</h2>
+        <p class=" text-dark intro-paragraph">
+          I'm Quoc Phong Dang or Tap or Tap Dang.
            I'm pursuing a B.S in Computer Science at Dickinson College.
-            I'm deeply interested in cybersecurity, especially in cryptography. I also have some curiosity about machine learning too.
+            I'm deeply interested in Backed-end development in Distributed System.
+            I'm currently looking for a Software Engineer Internship for Summer 2024 for this field.
+            I'm also have interested in other fields like CyberSecurity, Quantum Computing and System in General.
         </p>
       </div>
     </section>
 
-    <section class="skills" id="skill">
-      <h2 class = "skill-header">My Top Skills</h2>
+    <!-- <section class="skills py-4" id="skill">
+      
+      <div class="text-center mb-5">
+        <h1 class="display-5 fw-bolder mb-0"><span class="text-darkmint d-inline">Some of my Project</span></h1>
+      </div>
 
       <div class="skills-wrapper">
         <div class="firt-set animate__animated animate__pulse">
@@ -80,7 +94,117 @@
           <img src="Icons/icons8-python.svg" alt="python icon" loading = "lazy" class="icon icon-card">
         </div>
       </div>
-    </section>
+    </section> -->
+
+
+
+    <div class="container-skillbar" id="skills">
+      <div class="text-center mb-5">
+        <h1 class="display-5 fw-bolder mb-0"><span class="text-darkmint d-inline">My Programming Language Skills</span></h1>
+      </div>
+      <div class="skillbar clearfix " data-percent="85%">
+        <div class="skillbar-title" style="background: #970cc1;"><span>Python</span></div>
+        <div class="skillbar-bar one"></div>
+        <div class="skill-bar-percent">85%</div>
+      </div>
+      <!-- Ende Skill Bar -->
+      <div class="skillbar clearfix " data-percent="80%">
+        <div class="skillbar-title" style="background: #DD1E2F;"><span>Java</span></div>
+        <div class="skillbar-bar two"></div>
+        <div class="skill-bar-percent">80%</div>
+      </div>
+      <!-- Ende Skill Bar -->
+      <div class="skillbar clearfix " data-percent="75%">
+        <div class="skillbar-title" style="background: #192823;"><span>Javascript</span></div>
+        <div class="skillbar-bar three"></div>
+        <div class="skill-bar-percent">75%</div>
+      </div>
+      <!-- Ende Skill Bar -->
+      <div class="skillbar clearfix " data-percent="75%">
+        <div class="skillbar-title" style="background: #EBB035;"><span>HTML/CSS</span></div>
+        <div class="skillbar-bar four"></div>
+        <div class="skill-bar-percent">75%</div>
+      </div>
+      <!-- Ende Skill Bar -->
+      <div class="skillbar clearfix " data-percent="70%">
+        <div class="skillbar-title" style="background:  #55a69f;"><span>SQL</span></div>
+    
+        <div class="skillbar-bar five"></div>
+        <div class="skill-bar-percent">70%</div>
+      </div>
+      <!-- Ende Skill Bar -->
+      <div class="skillbar clearfix " data-percent="60%">
+        <div class="skillbar-title" style="background: #06A2CB;"><span>Scala</span></div>
+        <div class="skillbar-bar six"></div>
+        <div class="skill-bar-percent">65%</div>
+      </div>
+      <!-- Ende Skill Bar -->
+      <div class="skillbar clearfix " data-percent="60%">
+        <div class="skillbar-title" style="background: #218559;"><span>C/C++</span></div>
+        <div class="skillbar-bar seven"></div>
+        <div class="skill-bar-percent">60%</div>
+      </div>
+      <!-- Ende Skill Bar -->
+    </div>
+    <!-- Ende container Skill Bar -->
+
+
+    <section class="py-5">
+      <div class="container px-5 mb-5">
+          <div class="text-center mb-5">
+              <h1 class="display-5 fw-bolder mb-0"><span class="text-darkmint d-inline">Some of my Project</span></h1>
+          </div>
+          <div class="row gx-5 justify-content-center">
+              <div class="col-lg-11 col-xl-9 col-xxl-8">
+                  <!-- Project Card 1-->
+                  <div class="card overflow-hidden shadow rounded-4 border-0">
+                      <div class="card-body p-0">
+                          <div class="d-flex align-items-center">
+                              <div class="p-5">
+                                  <h2 class="fw-bolder"><a href="https://github.com/phong260702/ChatApp" class="text-success">ChatApp</a></h2>
+                                      <br>A simple Full Stack Chat Application using Nodejs with Socket.io for realtime.
+                                      </p>
+                                      <a href="https://github.com/phong260702/ChatApp" class="btn btn-success">View Source</a>
+                              </div>
+                              <div class="p-7">
+                                  <img class="img-fluid" src="https://icon-library.com/images/chat-app-icon/chat-app-icon-1.jpg" alt="Chat Icon"/>
+                              </div>
+                              
+                          </div>
+                      </div>
+                  </div>
+                  <br><br><br>
+                  <!-- Project Card 2-->
+                  <div class="card overflow-hidden shadow rounded-4 border-0">
+                      <div class="card-body p-0">
+                          <div class="d-flex align-items-center">
+                              <div class="p-5">
+                                <h2 class="fw-bolder"><a href="https://kafka.apache.org/" class="text-success">Apache Kafka</a></h2>
+                                      <br>Some of the Jira ticket I contribute to Kafka
+                                      </p>
+                                      <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                          <a href="https://github.com/apache/kafka/pull/14970" target="_blank" class="btn btn-success">KAFKA-15714</a>
+                                          <a href="https://issues.apache.org/jira/browse/KAFKA-15747" target="_blank" style="float: right;" class="btn btn-success">Ticket</a>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <a href="https://github.com/apache/kafka/pull/15028" target="_blank" class="btn btn-success">KAFKA-15747</a>
+                                          <a href="https://issues.apache.org/jira/browse/KAFKA-15714" target="_blank" style="float: right;" class="btn btn-success">Ticket</a>
+                                        </li>
+                                      </ul>
+                              </div>
+                              <div class="p-7">
+                                <img class="img-fluid" src="https://openstandia.jp/oss_info/image/ossinfo_icon_apachekafka.jpg" alt="Kafka">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+
 
     <section class="contact" id="contact">
       <h2>Contact me</h2>
@@ -98,9 +222,88 @@
     </section>
   
 
+    <div class="flex-container">
+      <!-- <div class="spinner">
+        <p>
+        <div class="cube1"></div>
+        <div class="cube2"></div>
+        Loading...
+        </p>
+      </div> -->
+      <a href="#about" style="text-decoration:none" class="flex-slide home">
+      <div class="flex-slide home">
+        <div class="flex-title flex-title-home">Home</div>
+        <div class="flex-about flex-about-home"><p>Click here to navigate to the home section of the website</p></div>
+      </div>
+      </a>
+      <div class="flex-slide about">
+        <div class="flex-title">Blog</div>
+        <div class="flex-about"><p>Comming Soon</p></div>
+      </div>
+      <!-- <div class="flex-slide work">
+        <div class="flex-title">Work</div>
+        <div class="flex-about"><p>Listing relevant snippets of work:</p>
+          <ul>
+            <li>First piece of work</li>
+            <li>Second piece of work</li>
+            <li>Third piece of work</li>
+          </ul>
+        </div>
+      </div> -->
+      <div class="flex-slide contact2">
+        <div class="flex-title">Contact</div>
+            <div class="flex-about">
+              <p>Use the contact form below</p>
+              <form class="contact-form">
+                <p>Email <input type="text" name="email"></p>
+                <p>Comment <textarea type="text" name="comment" row="5"></textarea></p>
+                <p><input type="submit" name="email" value="Send Message"></p>
+              </form>
+        </div>
+      </div>
+    </div>
 
+    <!-- Start Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <!-- Logo -->
+          </div>
+          <div class="footer-links">
+            <ul class="footer-menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <ul class="social-icons">
+              <li><a href="https://www.facebook.com/phong.quoc.353/"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://github.com/phong260702"><i class="fab fa-github"></i></a></li>
+              <li><a href="https://www.instagram.com/tap_dangg/"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/quoc-phong-dang/"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="mailto:phongdangquoc123@gmail.com"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; Quoc Phong Dang 2024</p>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/jquery.waitforimages.js"></script>
     <script src="main.js"></script>
+
+    <script>
+      $(function() {
+        $("#footer").load("footer.html");
+      });
+    </script>
 
     <script
       type="module"
@@ -108,5 +311,9 @@
     ></script>
 
     <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>

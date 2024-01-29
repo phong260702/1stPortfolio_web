@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/*－－－－－－－－－－ Profile －－－－－－－－－－*/
+.profile__img {
+  padding: 0 40px; }
+
+.profile__img img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin: auto; }
+
+.snslist .snslist__item .lab {
+  margin: 6px 0px 3px 4px;
+  font-size: 2rem; }
+
+.snslist .snslist__item a {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: #aaa;
+  border-radius: 50%;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -moz-transition: 0.2s;
+  color: #fff; }
+
+.snslist .snslist__item.twitter a:hover {
+  background-color: #1da1f2; }
+
+.snslist .snslist__item.instagram a:hover {
+  background-color: #cf2e92; }
+
+.snslist .snslist__item.facebook a:hover {
+  background-color: #4267b2; }
+
+.snslist .snslist__item.youtube a:hover {
+  background-color: #da1725; }
+
+@media screen and (max-width: 520px) {
+  .snslist {
+    justify-content: center; } }
